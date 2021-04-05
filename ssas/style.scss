@@ -1,0 +1,75 @@
+@import './partial/variable';
+@import './partial/placeholder';
+@import './partial/navbar';
+@import './partial/header' ;
+@import './partial/aboutus';
+@import './partial/counter';
+@import './partial/amazing';
+@import './partial/design';
+@import'./partial/service';
+@import'./partial/portfolio';
+@import'./partial/blog';
+@import'./partial/footer';
+body{
+    font-family: 'Montserrat', serif;
+    .inner-p{
+        font-size: .8rem;
+    }
+    .kushan-p{
+        font-family: 'Kaushan Script', cursive;
+    }
+    .header-line{
+        font-weight: 600;
+        &::after{
+            @extend %line;
+        }
+    }
+    .feedback{
+        background-color: #eee;
+    }
+    .feedback,.testimonial{
+        .blockquote-footer{
+            color: $sec-color ;
+            margin-top: 15px;
+            h6{
+                color: #000 !important;
+                font-family: 'Kaushan Script', cursive;
+                font-weight: 700;
+            }
+            &::before{
+                content:'';
+                width: 40px ;
+                height: 2px;
+                margin: 3px 0;
+                background-color: $sec-color;
+                display: inline-block;
+            }
+        }
+      
+    }
+    .people{
+        background: linear-gradient(rgba(255, 255, 255, 0.7)),
+        url('../assets/Images/clientbg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        .media-body{
+            & p:nth-child(2)::after{
+                @extend %line;
+                width: 50px;
+                margin: 5px 0;
+            }
+        }
+    }
+    .map{
+        background: linear-gradient(rgba(255, 255, 255, 0.7)),
+        url('../assets/Images/mapbg.jpg');
+        background-size: cover;
+        a{
+            color: $sec-color;
+            h2::after{
+               @extend %line;
+              
+            }
+        }
+    }
+}

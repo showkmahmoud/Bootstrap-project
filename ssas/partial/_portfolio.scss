@@ -1,0 +1,17 @@
+.portfolio{
+    .row{
+        .portfolio__img{
+            figure{
+                .overlay{
+                    @extend %overlay;
+                    // opacity: 1;
+                }
+                &:hover{
+                    .overlay{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

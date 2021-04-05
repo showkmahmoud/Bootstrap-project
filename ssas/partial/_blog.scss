@@ -1,0 +1,24 @@
+.blog{
+    .card__img{
+        .card__img__text{
+            left: -10px;
+            bottom: 20px;
+            background: #3bd3ba;
+            width: 60px;
+            height: 70px;
+        }
+    }
+    .card-body{
+        .card-title{
+            font-weight: 600;
+        }
+    }
+    .list-group{
+        .list-group-item{
+            i{
+                color: $icon-color;
+            }
+        }
+    }
+    
+}

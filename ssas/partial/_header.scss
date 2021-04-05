@@ -1,0 +1,48 @@
+.header{
+    background-image: linear-gradient(rgba(219, 116, 117, 0.6) ,rgba(228, 205, 125, 0.75)),
+    url('../assets/Images/homebg.jpg');
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
+   .carousel{
+        &-inner{
+            .carousel-item{
+                h3{
+                    font-family: 'Kaushan Script', cursive;
+                    padding-bottom: 25px;
+                    font-size: 4.5rem;
+                    line-height: 5rem;
+                }
+                h1{
+                    font-size: 8.5rem;
+                    line-height: 11rem;
+                    font-weight: 300;
+                    width: 80%;
+                    margin: auto;
+                }
+                &::after{
+                    @extend %line;
+                    background-color: #fff;
+                    width: 90px;
+                }
+            }
+        }
+        a{
+            border: 1px solid #fff;
+            width: 200px;
+            transition: .5s;
+            padding: 6px 30px;
+            margin: 10px auto;
+            font-size: 20px;
+            &:hover{
+                background-color: $main-color;
+                border-color: transparent;
+            }
+        }
+       
+    }
+    .row{
+        .border-top{
+            border-top: 2px #fff solid !important;
+        }
+    }
+}

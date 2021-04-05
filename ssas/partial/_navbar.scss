@@ -1,0 +1,21 @@
+.navbar{
+    font-family: 'Roboto Slab', serif;
+    z-index: 5;
+    .collapse{
+        .navbar-nav{
+            .nav-item{
+                a{
+                    font-weight: 300;
+                    font-size: .8rem; 
+                }
+                &.active a{
+                    color: $main-color ;
+                    border-bottom: 2px solid $border-color;
+                }
+                &:hover a{
+                    color: $main-color !important;
+                }
+            }
+        }
+    }
+}

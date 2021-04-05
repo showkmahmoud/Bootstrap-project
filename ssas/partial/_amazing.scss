@@ -1,0 +1,21 @@
+.amazing{
+    .amazing__cards{
+        .amazing__cards__item {
+            .icon-wrapper{
+                i{
+                    color: $icon-color;
+                    font-size: 2rem;
+                    // font-weight: 600;
+                }
+            }
+            .amazing__item__text{
+                h6{
+                    font-weight:bold;
+                }
+            }
+        }
+    }
+    .horz-line::after{
+        @extend%horz-line;
+    }
+}

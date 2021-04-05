@@ -1,0 +1,58 @@
+.about{
+    .about__text{
+        p{
+            font-size: 15px;
+        }
+    }
+    .about__cards__item{
+        .about__item__img{
+            transition: .5s;
+            .overlay{
+                @extend %overlay;
+                .d-flex{
+                    li{  
+                        i{
+                            width: 45px;
+                            height: 45px;
+                            line-height: 45px;
+                            font-size: 1.5rem;
+                            color: $sec-color;
+                            background-color: $main-color;
+                            transition: 0.6s;
+                        }
+                        &:hover{
+                            i{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .about__item__text{
+            top: 40%;
+            left: 40%;
+            cursor: pointer;
+            opacity: 0;
+            transition: .5s;
+            color: #fff;
+            &:hover{
+                color: $main-color !important;
+            }
+            i{
+                font-size: 30px;
+            }
+        }
+        &:hover {
+            .about__item__img{
+                box-shadow: 5px 5px 10px #3bd3ba;
+                .overlay{
+                    opacity: 1;
+                }
+            }
+            .about__item__text{
+                opacity: 1 ;
+            }
+        }
+    }
+}

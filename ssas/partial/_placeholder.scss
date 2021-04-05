@@ -1,0 +1,25 @@
+%line{
+    content: '';
+    display: block;
+    background-color: $sec-color;
+    height: 3px;
+    width: 127px;
+    margin: 30px auto;
+}
+%overlay{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(219, 116, 117, 0.6) ,rgba(228, 205, 125, 0.75)) ;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;;
+}
+%horz-line{
+    content: "";
+    height: 2px;
+    background-color: #ddd;
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+}

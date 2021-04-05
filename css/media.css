@@ -1,0 +1,13 @@
+@media(max-width:768px){ 
+    .header .carousel-item h1{
+        font-size: 2rem !important;
+    }
+
+    .counter .border-left,
+    .counter .border-right{
+        border-style: none;
+    }
+}
+h1{
+    color: black !important;
+}
